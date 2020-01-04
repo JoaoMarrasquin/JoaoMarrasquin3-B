@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\TrabajoState\TrabajoState\bin\Debug\TrabajoState.exe.config
+C:\Users\User\source\repos\TrabajoState\TrabajoState\bin\Debug\TrabajoState.exe
+C:\Users\User\source\repos\TrabajoState\TrabajoState\bin\Debug\TrabajoState.pdb
+C:\Users\User\source\repos\TrabajoState\TrabajoState\obj\Debug\TrabajoState.csprojAssemblyReference.cache
+C:\Users\User\source\repos\TrabajoState\TrabajoState\obj\Debug\TrabajoState.exe
+C:\Users\User\source\repos\TrabajoState\TrabajoState\obj\Debug\TrabajoState.pdb
