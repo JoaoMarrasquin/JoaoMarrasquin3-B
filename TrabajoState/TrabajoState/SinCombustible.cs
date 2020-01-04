@@ -8,11 +8,7 @@ namespace TrabajoState
 {
     public class SinCombustible: IEstado
     {
-        // Referencia a la clase de contexto
         Vehiculo v;
-
-
-        // Constructor que inyecta la dependencia en la clase actual
         public SinCombustible(Vehiculo v)
         {
             this.v = v;
