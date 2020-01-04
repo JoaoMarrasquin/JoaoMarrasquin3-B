@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajoState
 {
-    public class SinCombustible: IEstado
+    public class SinCombustible : IEstado
     {
         Vehiculo v;
         public SinCombustible(Vehiculo v)

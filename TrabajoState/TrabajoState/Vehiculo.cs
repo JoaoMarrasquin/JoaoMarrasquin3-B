@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TrabajoState
 {
-    public class Vehiculo: IEstado
+    public class Vehiculo : IEstado
     {
-        private IEstado estado;                 
-        private int velocidadActual = 0;      
-        private int combustibleActual = 0;    
+        private IEstado estado;
+        private int velocidadActual = 0;
+        private int combustibleActual = 0;
 
         public IEstado Estado
         {
@@ -36,7 +36,6 @@ namespace TrabajoState
         public void Acelerar()
         {
             estado.Acelerar();
-            Console.WriteLine("Velocidad actual: " + velocidadActual + ". Combustible restante: " + combustibleActual);
         }
 
         public void Frenar()
@@ -48,10 +47,12 @@ namespace TrabajoState
         {
             estado.Encender();
         }
-         
+
         public void ModificarVelocidad(int kmh)
         {
+            int velocidadreducida=0;
             velocidadActual += kmh;
+            kmh = velocidadreducida;
         }
 
         public void ModificarCombustible(int decilitros)

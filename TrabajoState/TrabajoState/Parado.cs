@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajoState
 {
-    public class Parado: IEstado
+    public class Parado : IEstado
     {
         Vehiculo v;
 
@@ -20,6 +20,8 @@ namespace TrabajoState
             {
                 v.Estado = new EnMarcha(v);
                 Console.WriteLine("El vehiculo se encuentra ahora EN MARCHA");
+
+
                 v.ModificarVelocidad(10);
                 v.ModificarCombustible(-10);
             }

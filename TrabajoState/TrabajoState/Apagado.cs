@@ -9,9 +9,9 @@ namespace TrabajoState
     public class Apagado: IEstado
     {
         Vehiculo v;
-        public Apagado(Vehiculo v)
+        public Apagado(Vehiculo apagado)
         {
-            this.v = v;
+            v = apagado;
         }
 
         public void Acelerar()
@@ -37,6 +37,10 @@ namespace TrabajoState
                 v.Estado = new SinCombustible(v);
                 Console.WriteLine("El vehiculo se encuentra sin combustible");
             }
+        }
+        public override string ToString()
+        {
+            return string.Format("En marcha - Velocidad {0}, Combustible {1}", v.VelocidadActual, v.CombustibleActual);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace TrabajoState
         {
             Vehiculo ve = new Vehiculo(1000);
             string opcion;
-           do
+            do
             {
                 Console.WriteLine("\n1.-Encender\n" +
                     "2.- Acelerar\n" +
@@ -24,7 +24,7 @@ namespace TrabajoState
                 if (opcion == "1") { ve.Encender(); }
                 if (opcion == "2") { ve.Acelerar(); }
                 if (opcion == "3") { ve.Frenar(); }
-          
+
             } while (opcion != "4");
         }
     }

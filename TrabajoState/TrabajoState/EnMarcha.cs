@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajoState
 {
-    public class EnMarcha: IEstado
+    public class EnMarcha : IEstado
     {
         int velocidadmax = 100;
         Vehiculo v;
@@ -18,6 +18,8 @@ namespace TrabajoState
 
         public void Acelerar()
         {
+            Console.WriteLine("Velocidad actual: " + v.VelocidadActual + ". Combustible restante: " + v.CombustibleActual);
+
             if (v.CombustibleActual > 0)
             {
                 if (v.VelocidadActual >= velocidadmax)
@@ -42,14 +44,14 @@ namespace TrabajoState
         {
             v.ModificarVelocidad(-10);
             if (v.VelocidadActual <= 0)
-            {
+                {
                 v.Estado = new Parado(v);
                 Console.WriteLine("El vehiculo se encuentra ahora PARADO");
-            }
+                }                       
         }
         public void Encender()
         {
-            Console.WriteLine("ERROR: No se puede cortar el contacto en marcha!");
+            Console.WriteLine("El vehículo ya está encendido");
         }
     }
 }
